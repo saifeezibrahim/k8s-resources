@@ -1,0 +1,14 @@
+Kind: pod
+apiVersion: v1
+metadata: 
+    name: annotations
+    labels:
+      author: saifeezibrahim
+      project : k8s
+    annotations:
+      kubernetes.io/created-by: 'saifeezibrahim'
+      jenkins.build.url: 'https://jenkins.aws.com/project/job/frontend/60'
+spec:
+    containers:
+    - name: nginx
+      image: nginx
